@@ -1,10 +1,14 @@
+.red {
+  background-color: #202020;
+  color: white;
+  text-align: left;
+}
+.wow {
+  background-color: #202020;
+}
 body {
   font: 20px "Century Gothic", Futura, sans-serif;
-  max-width: 400px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 150px;
+  text-align: left;
 }
 
 ol,
@@ -46,9 +50,12 @@ ul {
 }
 
 .game {
+  margin-top: 150px;
+  width: 100%;
+  height: 100vh;
   display: flex;
   text-align: center;
-  max-width: 238px;
+  max-width: 207px;
   margin-left: auto;
   margin-right: auto;
   flex-direction: row;

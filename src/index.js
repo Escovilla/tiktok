@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
@@ -85,7 +85,7 @@ class Game extends React.Component {
         <div className="game-board">
           <Board />
         </div>
-        <div className="game-info" style={{ margin: 0 }}>
+        <div className="game-info" style={{ width: 0 }}>
           <div>{/* status */}</div>
           <ol>{/* TODO */}</ol>
         </div>
@@ -95,8 +95,8 @@ class Game extends React.Component {
 }
 
 // ========================================
-
-ReactDOM.render(<Game />, document.getElementById("root"));
+export default Game;
+ReactDOM.render(<App />, document.getElementById("root"));
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
