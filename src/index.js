@@ -47,7 +47,7 @@ class Board extends React.Component {
     let status;
     if (winner) {
       if (winner === "draw") {
-        status = "Its a draw " + winner;
+        status = "Its a " + winner;
       } else {
         status = "Winner: " + winner;
       }
