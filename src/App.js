@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Game from "./index.js";
 import "./App.css";
+
 function App() {
   const [isRed, setRed] = useState(false);
-
   const up = () => {
     setRed(!isRed);
   };
